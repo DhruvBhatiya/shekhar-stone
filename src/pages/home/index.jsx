@@ -116,7 +116,7 @@ const Home = () => {
 
       {/* Services */}
       <Box className={classes.productsSliderStyle + ' ' + " "}>
-        <Box className={"bg-[#0000006b]  py-[70px] "}>
+        <Box className={"bg-[#0000008c]  py-[70px] "}>
           <TitleSection title={"Feature Products"} className={"productTitle"} />
           <Container1200 className={"  "} >
             <CarouselComponent settings={settingsProductsSlider} >
