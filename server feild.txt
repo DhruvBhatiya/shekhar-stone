@@ -1,0 +1,4 @@
+Login = email, pass
+Slider = title , images
+
+offer = image, title, description, percentage, 
