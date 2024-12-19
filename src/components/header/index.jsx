@@ -31,30 +31,31 @@ const Header = () => {
       <Box className={`${classes.upperHeader} ${shrink ? classes.shrinkUpper : ""}`}>
         <Box className={classes.logo}>
           <NavLink className="leading-3" to="/">
-            <Typography variant="h5" className="text-blue-900 font-extrabold uppercase">
+          <img src={require(`${process.env.REACT_APP_IMAGES_PATH}/logo/logo.jpeg`)} width={138} alt="My Image" />
+            {/* <Typography variant="h5" className="text-blue-900 font-extrabold uppercase">
               Shekhar
             </Typography>
             <Typography variant="caption" className="text-blue-900 font-medium uppercase">
               Kota Stone Company
-            </Typography>
+            </Typography> */}
           </NavLink>
         </Box>
         <Box className={classes.contactInfo}>
-          <Button startIcon={<WhatsAppIcon />} href="https://wa.me/123456789">
+          <Button startIcon={<WhatsAppIcon />} href="https://wa.me/+919414191888" target="_blank">
             <Box className="leading-5">
-              <Box>+123456789</Box>
+              <Box>+91 9414191888</Box>
               <Box className="text-xs text-slate-400">SEND WHATSAPP</Box>
             </Box>
           </Button>
-          <Button startIcon={<PhoneIcon />} href="tel:+123456789">
+          <Button startIcon={<PhoneIcon />} href="tel:+918114438007">
             <Box className="leading-5">
-              <Box>+123456789</Box>
+              <Box>+91 8114438007</Box>
               <Box className="text-xs text-slate-400">CALL US ON</Box>
             </Box>
           </Button>
-          <Button startIcon={<EmailIcon />} href="mailto:info@example.com">
+          <Button startIcon={<EmailIcon />} href="mailto:stoneshekhar@gmail.com">
             <Box className="leading-5">
-              <Box>info@example.com</Box>
+              <Box>stoneshekhar@gmail.com</Box>
               <Box className="text-xs text-slate-400">DROP US A LINE</Box>
             </Box>
           </Button>
