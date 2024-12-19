@@ -51,9 +51,9 @@ const Header = () => {
             </NavLink>
           </Box>
           <Box className={classes.contactInfo}>
-            <Button startIcon={<WhatsAppIcon />} href="https://wa.me/+919414191888" target="_blank">
+            <Button startIcon={<WhatsAppIcon />} href="https://wa.me/+919829545808" target="_blank">
               <Box className="leading-5">
-                <Box>+91 9414191888</Box>
+                <Box>+91 9829545808</Box>
                 <Box className="text-xs text-slate-400">SEND WHATSAPP</Box>
               </Box>
             </Button>

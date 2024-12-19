@@ -30,7 +30,7 @@ const About = () => {
               <Grid item lg={6} xs={12}>
                 <CardContent sx={{}} >
                   <Typography component="div" variant="h4" sx={{ marginBottom: '15px', fontWeight: '600' }}>
-                    Welcome to Shekhar Kota Stone Company!
+                    Welcome to Shekhar Stone Company!
                   </Typography>
 
                   <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}>
@@ -43,7 +43,7 @@ const About = () => {
                    
                   </ul> */}
 
-                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}>Thank you for choosing Shekhar Kota Stone Company. We look forward to partnering with you and contributing to your achievements.</Typography>
+                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}>Thank you for choosing Shekhar Stone Company. We look forward to partnering with you and contributing to your achievements.</Typography>
                 </CardContent>
               </Grid>
               <Grid item lg={6} xs={12}>

@@ -74,7 +74,7 @@ const Home = () => {
         </CarouselComponent>
       </Box>
 
-      {/* Shekhar Kota Stone Company */}
+      {/* Shekhar Stone Company */}
       <Container1200 className={classes.growMoreBg + " pt-10 pb-16 "} >
         <Grid className=' lg:px-0 px-2' container spacing={2}>
           <Grid item lg={7} xs={12}>
@@ -84,7 +84,7 @@ const Home = () => {
                   <div className="servece_0111 mt-[15px] mb-5" ></div>
                   <span>Welcome to Our Website</span>
                 </div><br />
-                <h1>We are, Shekhar Kota Stone Company</h1>
+                <h1>We are, Shekhar Stone Company</h1>
                 <p className="tagline">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p><br />
               </Box>
             </Box>
@@ -130,10 +130,10 @@ const Home = () => {
 
 
 
-      {/* Why Choose Shekhar Kota Stone Company ? */}
+      {/* Why Choose Shekhar Stone Company ? */}
       <Box className={classes.whyChooseStyle}>
         <Box className="lg:px-0 px-2">
-          <TitleSection title={"Why Choose Shekhar Kota Stone Company ?"} className={"productTitle"} />
+          <TitleSection title={"Why Choose Shekhar Stone Company ?"} className={"productTitle"} />
           <div className="servece-0111" />
           <Container1200 className={"  "} >
             <Grid container spacing={2}>
