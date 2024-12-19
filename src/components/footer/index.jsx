@@ -29,7 +29,7 @@ const Footer = () => {
                     <Box className={classes.row}>
 
                         <Box className={'footer-form'}>
-                            <TitleHead title="About Shekhar Stone" />
+                            <TitleHead title="About Shekhar Kota Stone Company" />
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </Box>
 
@@ -69,7 +69,7 @@ const Footer = () => {
                     <Box className={classes.rowBottom}>
 
                         <Box className={''}>
-                            <p>Design By <span><b>Dhruv Computers</b></span> - 2024</p>
+                            <p>Design By <span><b>Webbleu Technologies Pvt Ltd</b></span> - 2024</p>
                         </Box>
                         <Box>
 
