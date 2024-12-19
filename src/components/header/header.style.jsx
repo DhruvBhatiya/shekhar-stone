@@ -196,7 +196,7 @@ export const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "10px 20px",
+    padding: "10px 0px",
     backgroundColor: "#f8f9fa",
     transition: "padding 0.3s",
   },
@@ -223,7 +223,8 @@ export const useStyles = makeStyles(() => ({
   },
   lowerHeader: {
     // backgroundColor: "#ffffff !important",
-    boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+    // boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+    boxShadow: 'none !important'
 
   },
   shrinkLower: {
