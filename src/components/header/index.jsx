@@ -57,9 +57,9 @@ const Header = () => {
                 <Box className="text-xs text-slate-400">SEND WHATSAPP</Box>
               </Box>
             </Button>
-            <Button startIcon={<PhoneIcon />} href="tel:+918114438007">
+            <Button startIcon={<PhoneIcon />} href="tel:+919414191888">
               <Box className="leading-5">
-                <Box>+91 8114438007</Box>
+                <Box>+91 9414191888</Box>
                 <Box className="text-xs text-slate-400">CALL US ON</Box>
               </Box>
             </Button>

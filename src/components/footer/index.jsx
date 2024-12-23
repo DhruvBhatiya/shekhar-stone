@@ -1,5 +1,5 @@
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import ScrollToTop from "react-scroll-to-top";
@@ -23,67 +23,68 @@ const Footer = () => {
 
     if (isAdmin !== true) {
         return (
-            <Box className={classes.footerStyle}>
-                <Container1200>
-                    {/* 1 */}
-                    <Box className={classes.row}>
+            <>
 
-                        <Box className={'footer-form'}>
-                            <TitleHead title="About Shekhar Stone Company" />
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+
+                <Box className={classes.footerStyle}>
+
+                    <Container1200>
+
+                        <Box sx={{ flexGrow: 1, marginBottom: '20px', borderBottom: '5px', borderColor: 'white' }}>
+                            <Grid container spacing={10}>
+                                <Grid item xs={5}>
+                                    <Box className={'footer-form'}>
+                                        <TitleHead title="About Shekhar Stone Company" />
+                                        <p>Shekhar stone company has been manufacturing and supplying top quality kota stone since 2000. One of the biggest polished kota stone supplier in Ramganjmandi Kota Dist. Rajasthan. In these 25 years, we have worked with an esteemed Customers that included India’s top Builders, industrialists, and real estate constrictors and directly to the customer. </p>
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={3}>
+                                    <Box>
+                                        <TitleHead title="Quick Links" />
+                                        <Box className={classes.quicklinks}>
+                                            <NavLink className={'link'} to={'/'}>Company Profile</NavLink>
+                                            <NavLink className={'link'} to={'/media'}>Media</NavLink>
+                                            <NavLink className={'link'} to={'/contact'}>Contact Us</NavLink>
+                                        </Box>
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={3}>
+                                    <Box>
+                                        <TitleHead title="Our Services" />
+                                        <Box className={classes.quicklinks}>
+                                            {ProductsLinks && ProductsLinks.map((db, index) => {
+                                                return (
+                                                    db.link !== '/offer-of-month' &&
+                                                    <NavLink className={'link'} key={index} to={db.link}>{db.title}</NavLink>
+                                                )
+                                            }
+                                            )}
+                                        </Box>
+                                    </Box>
+                                </Grid>
+
+                            </Grid>
                         </Box>
 
-                        <Box>
-                            <TitleHead title="Quick Links" />
-                            <Box className={classes.quicklinks}>
-                                <NavLink className={'link'} to={'/'}>Company Profile</NavLink>
-                                <NavLink className={'link'} to={'/media'}>Media</NavLink>
-                                <NavLink className={'link'} to={'/contact'}>Contact Us</NavLink>
+
+
+                        {/* 2 */}
+                        <Box className={classes.rowBottom}>
+                            <Box className={''}>
+                                <p>Design By <span><b>Webbleu Technologies Pvt Ltd</b></span> - 2024</p>
                             </Box>
                         </Box>
+                    </Container1200>
 
-                        <Box>
-                            <TitleHead title="Our Services" />
-                            <Box className={classes.quicklinks}>
-                                {ProductsLinks && ProductsLinks.map((db, index) => {
-                                    return (
-                                        db.link !== '/offer-of-month' &&
-                                        <NavLink className={'link'} key={index} to={db.link}>{db.title}</NavLink>
-                                    )
-                                }
-                                )}
-                            </Box>
-                        </Box>
-
-                        {/* 
-                        <Box>
-                            <TitleHead title="Useful Link" />
-                            <Box className={classes.socialLinks}>
-                                {socialLinks.map((db, index) => (
-                                    <Box>{db.icon}</Box>
-                                ))}
-                            </Box>
-                        </Box> */}
-                    </Box>
-                    {/* 2 */}
-                    <Box className={classes.rowBottom}>
-
-                        <Box className={''}>
-                            <p>Design By <span><b>Webbleu Technologies Pvt Ltd</b></span> - 2024</p>
-                        </Box>
-                        <Box>
-
-                        </Box>
-                    </Box>
-                </Container1200>
-
-                <ScrollToTop
-                    smooth
-                    component={
-                        <KeyboardDoubleArrowUpIcon style={{ fontSize: 25, color: 'black' }} />
-                    }
-                />
-            </Box>
+                    <ScrollToTop
+                        smooth
+                        component={
+                            <KeyboardDoubleArrowUpIcon style={{ fontSize: 25, color: 'black' }} />
+                        }
+                    />
+                </Box>
+            </>
         )
     }
 }

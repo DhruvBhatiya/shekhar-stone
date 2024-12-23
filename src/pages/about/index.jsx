@@ -33,9 +33,12 @@ const About = () => {
                     Welcome to Shekhar Stone Company!
                   </Typography>
 
-                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                  </Typography>
+                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}> Shekhar stone company has been manufacturing and supplying top quality kota stone since 2000. One of the biggest polished kota stone supplier in Ramganjmandi Kota Dist. Rajasthan. In these 25 years, we have worked with an esteemed Customers that included India’s top Builders, industrialists, and real estate constrictors and directly to the customer. </Typography>
+                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}> The Company has long and distinguished history of supplying customers with high quality Kota stone products.</Typography>
+                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}>This has pushed us to handpick a selection of kota stones suited to the sensibility and functionality of our customers. </Typography>
+                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px', fontWeight: '600'}}>We have earned the status of an industry pioneer by offering such premium varieties of kota stone to choose from. Our reputation and the desire to deliver the best are a testament to our reliability.</Typography>
+                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}> Are you in search of the components that can make you home look way more superior than ever then this might be the right time to order our brand Kota stone Products.</Typography>
+                  <Typography variant="body2" color="text.secondary" component="p" sx={{ marginBottom: '16px', fontSize: '16px' }}>These will remain the talks of the town for the beauty of your Property.</Typography>
 
                   {/* <ul className="list-disc list-inside pl-4 space-y-2 mb-4 text-base">
                     <li><strong>Lorem Ipsum is simply dummy text:</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</li>

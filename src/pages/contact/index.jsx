@@ -48,7 +48,7 @@ const Contact = () => {
 
                   <p className="mb-4">
                     <strong>Phone:</strong>
-                    +919999999999
+                    +91 9414191888
                   </p>
                   <p className="mb-4">
                     <strong>Email:</strong> help@temp.in
@@ -56,7 +56,7 @@ const Contact = () => {
                   <p className="mb-4">
                     <strong>Business Hours:</strong>
                     <br />
-                    Monday - Saturday: 9:30 AM to 6:00 PM
+                    Monday - Sunday: 9:30 AM to 7:00 PM
                   </p>
                 </div>
               </div>
