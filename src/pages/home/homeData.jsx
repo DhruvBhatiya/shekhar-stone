@@ -91,7 +91,7 @@ export const settingsMainSlider = {
 export const settingsProductsSlider = {
   dots: true,
   infinite: true,
-  speed: 5000,
+  speed: 2000,
   slidesToShow: 4,
   slidesToScroll: 4,
   spaceBetween: 16,
@@ -131,8 +131,8 @@ export const settingsProductsSlider = {
 export const slidesProducts = [
   // Fertilizer 
   { image: p1, title: '22x22', link: '/' },
-  { image: p2, title: '16x16', link: '/' },
-  { image: p3, title: '22x16', link: '/' },
+  { image: p2, title: '22x22', link: '/' },
+  { image: p3, title: '22x11', link: '/' },
   { image: p4, title: '2x2 uncut', link: '/' },
   { image: p5, title: '23x23', link: '/' },
   { image: p6, title: '22x11', link: '/' },

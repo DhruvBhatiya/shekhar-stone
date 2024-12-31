@@ -33,8 +33,9 @@ const Contact = () => {
               <div className=" w-full mb-8 lg:mb-0">
                 <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
                   <h2 className="text-2xl font-semibold mb-4">Registered office</h2>
+                  <h5 className='font-medium'>Mr.Naresh Kumar Meena (Raju Bhai)</h5>
                   <p className="mb-4">
-                  Nimana Road Vill. Mayla <br />Ramganjmandi Dist. Kota <br />Rajasthan
+                    Nimana Road Vill. Mayla <br />Ramganjmandi Dist. Kota <br />Rajasthan
                   </p>
 
                   {/* <h2 className="text-2xl font-semibold mb-4">Branch office</h2>
@@ -47,11 +48,11 @@ const Contact = () => {
                   <p className="mb-4" >
                     <strong>Phone: </strong>
                     <a className='' href="tel:+919829545808">+91 9829545808</a>  &nbsp; / &nbsp;
-                     <a href="tel:+919414191888">+91 9414191888</a> 
+                    <a href="tel:+919414191888">+91 9414191888</a>
                   </p>
-                 
+
                   <p className="mb-4">
-                    <strong>Email:</strong> help@temp.in
+                    <strong>Email:</strong> <a href="mailto:stoneshekhar@gmail.com">stoneshekhar@gmail.com</a>
                   </p>
                   <p className="mb-4">
                     <strong>Business Hours:</strong>

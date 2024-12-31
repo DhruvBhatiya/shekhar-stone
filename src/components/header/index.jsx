@@ -7,7 +7,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Container1200 } from "../shared/CustomContainer";
 import DrawerRight from "../DrawerRight";
-import { adminLinks, menuListDesktop } from "../header copy/headerData";
+import { adminLinks, menuListDesktop } from "../header/headerData";
 
 const Header = () => {
   const classes = useStyles();

@@ -1,3 +1,4 @@
+import { fontSize, minHeight } from "@mui/system";
 import { theme } from "../../theme";
 
 const { makeStyles } = require("@mui/styles");
@@ -22,7 +23,8 @@ export const useStyles = makeStyles(() => ({
       boxShadow: "0 2px 3px rgba(96, 96, 96, .1)",
     },
     "& .MuiToolbar-root.MuiToolbar-gutters": {
-      height: '69px'
+      height: '69px', 
+      minHeight: '52px !important'
     }
   },
   appBar: {
@@ -170,4 +172,92 @@ export const useStyles = makeStyles(() => ({
       marginLeft: '50px'
     },
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // =============================
+
+  headerContainer: {
+    width: "100%",
+    position: "sticky",
+    top: 0,
+    zIndex: 1300,
+  },
+  upperHeader: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 0px",
+    backgroundColor: "#f8f9fa",
+    transition: "padding 0.3s",
+  },
+  shrinkUpper: {
+    padding: "0px 20px",
+    position: 'absolute',
+    top: 0, 
+    transition: "padding 1.3s",
+  },
+  logo: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+  },
+  contactInfo: {
+    display: "flex",
+    alignItems: "center",
+    gap: "30px",
+
+    "& svg":{
+      fontSize: '30px !important',
+      color: '#8ab029'
+    }
+  },
+  lowerHeader: {
+    // backgroundColor: "#ffffff !important",
+    // boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+    boxShadow: 'none !important'
+
+  },
+  shrinkLower: {
+    boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.1)",
+  },
+  menuList: {
+    display: "flex",
+    alignItems: "center",
+    "& ul": {
+      display: "flex",
+      listStyle: "none",
+      margin: 0,
+      padding: 0,
+      gap: "20px",
+    },
+    "& li": {
+      "& a": {
+        textDecoration: "none",
+        fontSize: "16px",
+        color: "#fff",
+        transition: "color 0.2s",
+        "&:hover": {
+          // color: theme.palette.primary.main,
+          textDecoration: 'underline'
+        },
+      },
+    },
+  },
+  activeLink: {
+    color: theme.palette.primary.main,
+    fontWeight: "bold",
+  },
+
+  
 }));
