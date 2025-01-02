@@ -14,10 +14,10 @@ export const useStyles = makeStyles(() => ({
         "display":"inline-flex",
         "lineHeight":"1 !important",
         "fontSize":"15px !important",
-        "padding":"12px 24px !important",
+        // "padding":"12px 24px !important",
         "textAlign":"center",
         "transition":"all .3s !important",
-        marginBottom: '15px !important'
+        // marginBottom: '15px !important'
     },
 
     buttonTrans:{

@@ -197,9 +197,13 @@ export const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "10px 0px",
+    padding: "5px 0px",
     backgroundColor: "#f8f9fa",
     transition: "padding 0.3s",
+
+    "& .MuiButton-text":{
+      color: '#000 !important'
+    },
   },
   shrinkUpper: {
     padding: "0px 20px",
@@ -215,12 +219,17 @@ export const useStyles = makeStyles(() => ({
   contactInfo: {
     display: "flex",
     alignItems: "center",
-    gap: "30px",
+    // gap: "30px",
 
     "& svg":{
       fontSize: '30px !important',
-      color: '#8ab029'
-    }
+      // color: '#8ab029'
+    },
+    "& a":{
+      color: '#000 !important'
+    },
+    
+   
   },
   lowerHeader: {
     // backgroundColor: "#ffffff !important",
@@ -259,5 +268,52 @@ export const useStyles = makeStyles(() => ({
     fontWeight: "bold",
   },
 
+
+
+
+  // =============================
+
+  headerContainer: {
+    position: "relative",
+    zIndex: 1100,
+    width: "100%",
+    position: 'sticky',
+    top: '-139px'
+  },
+  upperHeader: {
+    backgroundColor: "#f5f5f5",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 0px",
+    transition: "transform 0.5s ease, opacity 0.5s ease",
+  },
+  shrinkUpper: {
+    transform: "translateY(-100%)",
+    opacity: 0,
+  },
+  lowerHeader: {
+    backgroundColor: "#939597",
+    color: "#fff",
+    transition: "transform 0.5s ease, opacity 0.5s ease",
+  },
+  shrinkLower: {
+    transform: "translateY(-100%)",
+    opacity: 0,
+  },
+  stickyPart: {
+    position: "sticky",
+    top: 0,
+    zIndex: 1200,
+    backgroundColor: "#070506",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "10px 20px",
+    "& a": {
+      color: '#fff',
+    }
+  },
   
 }));

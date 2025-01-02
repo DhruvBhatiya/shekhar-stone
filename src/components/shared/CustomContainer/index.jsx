@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import React from 'react';
 import { useStyles } from './CustomContainer.style';
 
@@ -28,12 +28,20 @@ export const Container1140 = ({ children, className }) => {
     </Box>
   );
 };
+// export const Container1200 = ({ children, className }) => {
+//   const classes = useStyles();
+//   return (
+//     <Box className={classes.container1200 + ' ' + className}>
+//       {children}
+//     </Box>
+//   );
+// };
 export const Container1200 = ({ children, className }) => {
   const classes = useStyles();
   return (
-    <Box className={classes.container1200 + ' ' + className}>
+    <Container maxWidth="xl" className={ + ' ' + className}>
       {children}
-    </Box>
+    </Container>
   );
 };
 export const Container1440 = ({ children }) => {

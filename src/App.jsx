@@ -45,25 +45,22 @@ const domainLink = "/apps/arabinfra/"
       <ScrollToTop />
       <Routes>
         <Route path="/admin/login" element={<LoginAdmin />} />
+
+        
         {/* <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
           <Route path="/admin/dashboard" element={<AdminDashboards />} />
         </Route> */}
+
+
         <Route element={<ProtectedRoute />}>
           <Route path="/admin/dashboard" element={<AdminDashboards />} />
         </Route>
-        <Route path={`/`} element={<Home />} />
+        {/* <Route path={`/`} element={<Home />} /> */}
         <Route path="/about" element={<About__ />} />
-        {/* <Route path="/gpt" element={<ChatGPt />} /> */}
         <Route path="/services" element={<Services__ />} />
-        <Route path="/services/details" element={<ServiceDetails__ />} />
-
-        {/* <Route path="/services" element={<Services__ />}>
-          <Route index={true} element={<Services />} />
-          <Route path="details" element={<ServiceDetails__ />} />
-        </Route> */}
-
+        {/* <Route path="/services/details" element={<ServiceDetails__ />} />
         <Route path="/projects" element={<Projects__ />} />
-        <Route path="/media" element={<Media__ />} />
+        <Route path="/media" element={<Media__ />} /> */}
         <Route path="/contact" element={<ContactUs__ />} />
 
       </Routes>

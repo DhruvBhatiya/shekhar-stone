@@ -197,7 +197,7 @@ export const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "10px 0px",
+    padding: "5px 0px",
     backgroundColor: "#f8f9fa",
     transition: "padding 0.3s",
   },

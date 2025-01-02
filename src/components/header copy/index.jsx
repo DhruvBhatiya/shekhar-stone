@@ -45,8 +45,9 @@ const Header = () => {
             <NavLink className="leading-3" to="/">
               <img
                 src={require(`${process.env.REACT_APP_IMAGES_PATH}/logo/logo.jpeg`)}
-                width={138}
-                alt="My Image"
+                // width={138}
+                alt="My Image 11"
+                className=" w-[65px] lg:w-[110px] xl:lg:w-[110px]"
               />
             </NavLink>
           </Box>
@@ -86,8 +87,9 @@ const Header = () => {
               <NavLink className="leading-3" to="/">
                 <img
                   src={require(`${process.env.REACT_APP_IMAGES_PATH}/logo/logo.jpeg`)}
-                  width={138}
+                  // width={138}
                   alt="My Image"
+                  className=" w-[80px] lg:w-[110px] xl:lg:w-[110px]"
                 />
               </NavLink>
               <DrawerRight menu={menuListDesktop} adminLinks={adminLinks} isAdmin={isAdmin} />
