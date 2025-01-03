@@ -74,7 +74,7 @@ const Header = () => {
             </select>
           </Box> */}
 
-
+              
               <Button className="bg-white" variant="contained" onClick={() => setOpenModal(true)} endIcon={<EmailIcon />}>
                 Send Inquiry
               </Button>
@@ -127,29 +127,14 @@ const Header = () => {
           <DrawerRight menu={menuListDesktop} adminLinks={adminLinks} />
         ) : (
           <Container1200>
-            <Box style={{ display: "flex", gap: "20px", padding: "10px", }}>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? "font-semibold !text-[#74a04e]" : "inactive-link"
-                }
-              >
+            <Box className="flex gap-5 uppercase ">
+              <NavLink to="/" className="px-2">
                 Home
               </NavLink>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive ? "font-semibold !text-[#74a04e]" : "inactive-link"
-                }
-              >
+              <NavLink to="/about" className="px-2">
                 About
               </NavLink>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive ? "font-semibold !text-[#74a04e]" : "inactive-link"
-                }
-              >
+              <NavLink to="/contact" className="px-2">
                 Contact
               </NavLink>
             </Box>

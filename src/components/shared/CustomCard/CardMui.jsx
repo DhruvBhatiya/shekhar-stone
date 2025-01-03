@@ -9,7 +9,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import GridViewIcon from '@mui/icons-material/GridView';
 
 
-export default function CardMui({ db, index }) {
+export default function CardMui({ db, index, onClick }) {
     return (
         <Card key={index} sx={{ maxWidth: '100%', margin: '0 10px' }}>
             <CardMedia
@@ -26,7 +26,7 @@ export default function CardMui({ db, index }) {
                 </Typography>
             </CardContent>
             <CardActions sx={{paddingTop: 0}}>
-                <Button className='w-1/2' variant="outlined" endIcon={<ShoppingCartIcon />}>
+                <Button onClick={onClick} className='w-1/2' variant="outlined" endIcon={<ShoppingCartIcon />}>
                     Order Now
                 </Button>
                 <Button className='w-1/2' variant="outlined" endIcon={<GridViewIcon />}>

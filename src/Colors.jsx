@@ -7,7 +7,8 @@ const Colors = {
     brightSkyBlue: '#02CCFE',
     red: '#d7161d',
     yellow: '#FDDA0D',
-    black: ''
+    black: '', 
+    greenLine: '#74a04e',
 }
 
 export default Colors

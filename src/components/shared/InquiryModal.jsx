@@ -26,7 +26,7 @@ const InquiryModal = ({ open, onClose }) => {
   return (
     <Dialog open={open} onClose={onClose}>
       <Box className="p-10">
-        <h1 className="text-4xl font-semibold uppercase mb-5">Send Inquiry</h1>
+        <h1 className="text-2xl font-semibold uppercase mb-5">Please Fill Enquiry Form</h1>
         <ContactForm />
       </Box>
 

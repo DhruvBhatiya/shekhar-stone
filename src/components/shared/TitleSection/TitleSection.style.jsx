@@ -17,7 +17,7 @@ export const useStyles = makeStyles(() => ({
         },
 
         "& .servece-0111":{
-            "position":"relative","height":"5px","width":"65px","borderRadius":"8px","backgroundColor":`${Colors.brightSkyBlue}`,"display":"block","margin":"18px auto 20px auto"
+            "position":"relative","height":"5px","width":"65px","borderRadius":"8px","backgroundColor":`${Colors.greenLine}`,"display":"block","margin":"18px auto 20px auto"
         }
     }
 

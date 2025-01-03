@@ -25,6 +25,7 @@ import {
 import VerticalTabs from "../../components/TabVertical";
 import CardMui from "../../components/shared/CustomCard/CardMui";
 import NotesIcon from '@mui/icons-material/Notes';
+import InquiryModal from "../../components/shared/InquiryModal";
 
 const Home = () => {
   const global = useStylesGloble();
@@ -32,6 +33,8 @@ const Home = () => {
   const dispatch = useDispatch();
 
   const [imgError, setError] = useState(false);
+    const [openModal, setOpenModal] = useState(false);
+  
 
   // Main Slider 
   const MainSlider = useSelector((state) => state.allSlider);
@@ -126,14 +129,14 @@ const Home = () => {
 
       {/* Products */}
       <Box className={classes.productsSliderStyle + ' ' + " "}>
-        <Box className={"bg-[#0000008c]  py-[70px] "}>
+        <Box className={"bg-[#0000008c]  pt-[70px] pb-[100px] "}>
           <TitleSection title={"Feature Products"} className={"productTitle"} />
           <Container1200 className={"  "} >
             <CarouselComponent settings={settingsProductsSlider} >
               {slidesProducts.map((slide, index) => (
                 <>
                   {/* <CarouselCard slide={slide} /> */}
-                  <CardMui db={slide} index={index} />
+                  <CardMui db={slide} index={index} onClick={() => setOpenModal(true)}  />
                 </>
               ))}
             </CarouselComponent>
@@ -216,6 +219,9 @@ const Home = () => {
           <BlogCard data={blogData} />
         </Box>
       </Container1320> */}
+
+      {/* Inquiry Modal */}
+      <InquiryModal open={openModal} onClose={() => setOpenModal(false)} />
     </>
   );
 };

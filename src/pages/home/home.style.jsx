@@ -186,7 +186,7 @@ export const useStyles = makeStyles(() => ({
 
 
     headingWithLine: {
-        "& .servece_0111": { "position": "relative", "height": "5px", "width": "65px", "borderRadius": "8px", "backgroundColor": `${Colors.brightSkyBlue}`, "display": "block", }
+        "& .servece_0111": { "position": "relative", "height": "5px", "width": "65px", "borderRadius": "8px", "backgroundColor": `${Colors.greenLine}`, "display": "block", }
     },
 
     growMoreBg: {
@@ -251,14 +251,14 @@ export const useStyles = makeStyles(() => ({
         },
 
 
-        "backgroundColor": "#ffc000",
+        "backgroundColor": "#00000042",
         // "backgroundImage": `url(${process.env.REACT_APP_IMAGES_PATH}/images/bg/product-bg.webp)`,
         backgroundImage: `url(${productBg})`,
         backgroundSize: '100%',
         "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", "backgroundPosition": "center",
 
         "& .slick-dots": {
-            bottom: '-20px !important'
+            bottom: '-50px !important'
         },
 
         "& .prod-img": {
@@ -274,7 +274,7 @@ export const useStyles = makeStyles(() => ({
             }
         },
         "& .servece-0111": {
-            "backgroundColor": `${Colors.brightSkyBlue}`, "margin": "10px auto 15px auto", "position": "relative", "height": "5px", "width": "65px", "borderRadius": "8px", "display": "block"
+            "backgroundColor": `${Colors.greenLine}`, "margin": "10px auto 15px auto", "position": "relative", "height": "5px", "width": "65px", "borderRadius": "8px", "display": "block"
         },
 
         "& .content-sec": {

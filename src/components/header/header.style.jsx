@@ -10,7 +10,7 @@ export const useStyles = makeStyles(() => ({
     fontWeight: "bold", // Optional: Highlight active link with bold text
     color: theme.palette.primary.main, // Optional: Change the active link color
   },
-  
+
   backside: {
     width: "100%",
     height: "73px",
@@ -23,7 +23,7 @@ export const useStyles = makeStyles(() => ({
       boxShadow: "0 2px 3px rgba(96, 96, 96, .1)",
     },
     "& .MuiToolbar-root.MuiToolbar-gutters": {
-      height: '69px', 
+      height: '69px',
       minHeight: '52px !important'
     }
   },
@@ -112,17 +112,17 @@ export const useStyles = makeStyles(() => ({
     },
   },
 
-  menuRightSec:{
+  menuRightSec: {
     marginLeft: 'auto',
   },
- 
+
 
   noUnderline: {
     "& a": {
-      textDecration:'none',
+      textDecration: 'none',
       "&::after": {
         content: 'none',
-        width:'0px !important'
+        width: '0px !important'
       },
     },
     "& button": {
@@ -136,10 +136,10 @@ export const useStyles = makeStyles(() => ({
     marginLeft: 'auto !important'
   },
 
-  adminMenuItems:{
+  adminMenuItems: {
     marginLeft: '10% !important'
   },
-  
+
   phoneIcon: {
     display: "none",
   },
@@ -201,14 +201,14 @@ export const useStyles = makeStyles(() => ({
     backgroundColor: "#f8f9fa",
     transition: "padding 0.3s",
 
-    "& .MuiButton-text":{
+    "& .MuiButton-text": {
       color: '#000 !important'
     },
   },
   shrinkUpper: {
     padding: "0px 20px",
     position: 'absolute',
-    top: 0, 
+    top: 0,
     transition: "padding 1.3s",
   },
   logo: {
@@ -221,21 +221,24 @@ export const useStyles = makeStyles(() => ({
     alignItems: "center",
     // gap: "30px",
 
-    "& svg":{
+    "& svg": {
       fontSize: '30px !important',
-      // color: '#8ab029'
+      color: '#74a04e'
     },
-    "& a":{
+    "& a": {
       color: '#000 !important'
     },
-    
-   
+
+
   },
   lowerHeader: {
     // backgroundColor: "#ffffff !important",
     // boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
-    boxShadow: 'none !important'
+    boxShadow: 'none !important',
 
+    "& svg": {
+      color: 'red !important'
+    },
   },
   shrinkLower: {
     boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.1)",
@@ -315,5 +318,5 @@ export const useStyles = makeStyles(() => ({
       color: '#fff',
     }
   },
-  
+
 }));
