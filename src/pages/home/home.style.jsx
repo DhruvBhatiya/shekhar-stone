@@ -2,11 +2,11 @@ import { makeStyles } from "@mui/styles";
 import { theme } from "../../theme";
 // import visionBg from "../../assets/img/images/bg/vision-design.webp"
 import productSlider from "../../assets/img/images/bg/product-bg.webp"
-import whyChooseBg from "../../assets/img/images/bg/ag-pic-18.webp"
+import whyChooseBg from "../../assets/bg/bg100.png"
 import growMoreBgg from "../../assets/img/images/bg/bg-section-01.webp"
-import { servicebg, visionBg } from "../../Images";
+import { visionBg } from "../../Images";
 import Colors from "../../Colors";
-
+import productBg from "../../assets/bg/productBg.png"
 
 
 export const useStyles = makeStyles(() => ({
@@ -253,7 +253,7 @@ export const useStyles = makeStyles(() => ({
 
         "backgroundColor": "#ffc000",
         // "backgroundImage": `url(${process.env.REACT_APP_IMAGES_PATH}/images/bg/product-bg.webp)`,
-        backgroundImage: `url(${servicebg})`,
+        backgroundImage: `url(${productBg})`,
         backgroundSize: '100%',
         "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", "backgroundPosition": "center",
 
@@ -307,8 +307,8 @@ export const useStyles = makeStyles(() => ({
 
             "& .list-icon": {
                 "& svg": {
-                    "color": `${Colors.red}`, "textAlign": "center", "fontSize": "50px !important", "lineHeight": "75px !important", "borderRadius": "100px", "border": "4px solid #f7f8f8", "height": "82px", "width": "82px", "marginTop": "-40px", "backgroundColor": "#fff",
-                    padding: '12px'
+                    "color": `#939597`, "textAlign": "center", "fontSize": "50px !important", "lineHeight": "75px !important", "borderRadius": "100px", "border": "4px solid #f7f8f8", "height": "82px", "width": "82px", "marginTop": "-40px", "backgroundColor": "#fff",
+                    padding: '12px', boxShadow: '0 4px 20px 0 #0000002e'
                 }
             }
         }

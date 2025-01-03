@@ -1,7 +1,23 @@
-import { Button } from '@mui/material'
+import { Button, styled } from '@mui/material'
 import React from 'react'
 import { useStyles } from './buttonCustom.style'
 import { useNavigate } from 'react-router-dom';
+
+const ColorButton = styled(Button)(({ theme }) => ({
+    color: '#fff',
+    backgroundColor: '#000',
+    '&:hover': {
+      backgroundColor: '#522df',
+    },
+  }));
+
+export function ButtonColor({ path, children, className }) { 
+    const classes = useStyles()
+    const navigate = useNavigate();
+    return (
+        <ColorButton onClick={() => navigate(path)} variant="contained" className={className}>{children}</ColorButton>
+    );
+  }
 
 
 export function DynamicNavigateButton({ path, children, className }) {

@@ -55,7 +55,7 @@ const domainLink = "/apps/arabinfra/"
         <Route element={<ProtectedRoute />}>
           <Route path="/admin/dashboard" element={<AdminDashboards />} />
         </Route>
-        {/* <Route path={`/`} element={<Home />} /> */}
+        <Route path={`/`} element={<Home />} />
         <Route path="/about" element={<About__ />} />
         <Route path="/services" element={<Services__ />} />
         {/* <Route path="/services/details" element={<ServiceDetails__ />} />

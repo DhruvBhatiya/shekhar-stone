@@ -17,6 +17,7 @@ import * as Yup from 'yup';
 import { ButtonBorder } from '../../components/shared/ButtonCustom';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
+import MailIcon from '@mui/icons-material/Mail';
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -163,7 +164,7 @@ const ContactForm = () => {
                 </Grid>
               )} */}
               <Grid item xs={12}>
-                <ButtonBorder
+                {/* <ButtonBorder
                   type="submit"
                   fullWidth
                   variant="contained"
@@ -171,7 +172,11 @@ const ContactForm = () => {
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
-                </ButtonBorder>
+                </ButtonBorder> */}
+
+                <Button  type="submit" variant="outlined" endIcon={<MailIcon />}  disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </Button>
               </Grid>
             </Grid>
           </Form>

@@ -104,8 +104,8 @@ export const settingsProductsSlider = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         infinite: true,
         dots: true
       }
@@ -113,8 +113,8 @@ export const settingsProductsSlider = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         initialSlide: 2
       }
     },
@@ -130,12 +130,12 @@ export const settingsProductsSlider = {
 
 export const slidesProducts = [
   // Fertilizer 
-  { image: p1, title: '22x22', link: '/' },
-  { image: p2, title: '22x22', link: '/' },
-  { image: p3, title: '22x11', link: '/' },
-  { image: p4, title: '2x2 uncut', link: '/' },
-  { image: p5, title: '23x23', link: '/' },
-  { image: p6, title: '22x11', link: '/' },
+  { id: '101', image: p1, title: '22x16', link: '/', content: 'Kota Stone Size 22X16 Thickness available 18mm to 25mm and 25mm to 32mm' },
+  { id: '102', image: p2, title: '2x2', link: '/', content: 'Kota Stone Size 2x2 Thickness available 18mm to 25mm and 25mm to 32mm' },
+  { id: '103', image: p3, title: '22x11', link: '/', content: 'Kota Stone Size 22x11 Thickness available 18mm to 25mm and 25mm to 32mm' },
+  { id: '104', image: p4, title: '2x2 uncut', link: '/', content: 'Kota Stone Size 2x2 uncut Thickness available 18mm to 25mm and 25mm to 32mm' },
+  { id: '105', image: p5, title: '23x23', link: '/', content: 'Kota Stone Size 23x23 Thickness available 18mm to 25mm and 25mm to 32mm' },
+  { id: '106', image: p6, title: '22x11', link: '/', content: 'Kota Stone Size 22X11 Thickness available 18mm to 25mm and 25mm to 32mm' },
 ];
 
 

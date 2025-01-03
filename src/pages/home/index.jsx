@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from 'react-router-dom';
@@ -23,6 +23,8 @@ import {
   WhyChooseData
 } from "./homeData";
 import VerticalTabs from "../../components/TabVertical";
+import CardMui from "../../components/shared/CustomCard/CardMui";
+import NotesIcon from '@mui/icons-material/Notes';
 
 const Home = () => {
   const global = useStylesGloble();
@@ -59,9 +61,9 @@ const Home = () => {
     navigate('/about');
   };
 
-// const no =[1, 2, 3, 4];
-// const no1 = no.reverse();
-// console.log("no.reverse()__",no1)
+  // const no =[1, 2, 3, 4];
+  // const no1 = no.reverse();
+  // console.log("no.reverse()__",no1)
 
 
   return (
@@ -95,12 +97,14 @@ const Home = () => {
               </Box>
             </Box>
             <Box className="lg:text-left text-center">
-              <ButtonBorder onClick={handleNavigationAbout}>Read More...</ButtonBorder>
+              <Button onClick={handleNavigationAbout} variant="outlined" endIcon={<NotesIcon />}>
+                Read More
+              </Button>
             </Box>
           </Grid>
           <Grid item lg={5} xs={12}>
             <Box className={classes.imagesSec}>
-              <img src={require(`${process.env.REACT_APP_IMAGES_PATH}/about/about.jpg`)} alt={"image"} />
+              <img className="h-[400px]" src={require(`${process.env.REACT_APP_IMAGES_PATH}/about/about.jpg`)} alt={"image"} />
               {/* <img src={noImage} alt={"image"} /> */}
             </Box>
           </Grid>
@@ -127,7 +131,10 @@ const Home = () => {
           <Container1200 className={"  "} >
             <CarouselComponent settings={settingsProductsSlider} >
               {slidesProducts.map((slide, index) => (
-                <CarouselCard slide={slide} />
+                <>
+                  {/* <CarouselCard slide={slide} /> */}
+                  <CardMui db={slide} index={index} />
+                </>
               ))}
             </CarouselComponent>
           </Container1200>

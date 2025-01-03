@@ -74,16 +74,14 @@ const Header = () => {
             </select>
           </Box> */}
 
-              <ButtonBorder
-                type="submit"
-                fullWidth
-                variant="contained"
-                color="primary"
-                onClick={() => setOpenModal(true)}
-              >
-                <EmailIcon /> &nbsp; Send Inquiry
-              </ButtonBorder>
+              
+              <Button className="bg-white" variant="contained" onClick={() => setOpenModal(true)} endIcon={<EmailIcon />}>
+                Send Inquiry
+              </Button>
             </Box>
+
+
+
           </Toolbar>
         </Container1200>
       </Box>

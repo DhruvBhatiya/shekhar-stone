@@ -6,7 +6,9 @@ import {
   DialogActions,
   TextField,
   Button,
+  Box,
 } from "@mui/material";
+import ContactForm from "../../pages/contact/ContactForm";
 
 const InquiryModal = ({ open, onClose }) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -23,8 +25,12 @@ const InquiryModal = ({ open, onClose }) => {
 
   return (
     <Dialog open={open} onClose={onClose}>
-      <DialogTitle>Send Inquiry</DialogTitle>
-      <DialogContent>
+      <Box className="p-10">
+        <h1 className="text-4xl font-semibold uppercase mb-5">Send Inquiry</h1>
+        <ContactForm />
+      </Box>
+
+      {/* <DialogContent>
         <TextField
           fullWidth
           label="Name"
@@ -51,15 +57,17 @@ const InquiryModal = ({ open, onClose }) => {
           multiline
           rows={4}
         />
-      </DialogContent>
-      <DialogActions>
+      </DialogContent> */}
+
+
+      {/* <DialogActions>
         <Button onClick={onClose} color="secondary">
           Cancel
         </Button>
         <Button onClick={handleSubmit} color="primary" variant="contained">
           Submit
         </Button>
-      </DialogActions>
+      </DialogActions> */}
     </Dialog>
   );
 };

@@ -7,6 +7,8 @@ import { menuListMobile } from '../header/headerData';
 import { Container10, Container100, Container1140, Container1200, Container1320, Container1400, Container1440 } from '../shared/CustomContainer';
 import { useStyles } from './footer.style';
 import { ProductsLinks } from './footerData';
+import { slidesProducts } from '../../pages/home/homeData';
+import Whatsapp from '../shared/WhatsApp';
 
 
 const Footer = () => {
@@ -43,9 +45,9 @@ const Footer = () => {
                                     <Box>
                                         <TitleHead title="Quick Links" />
                                         <Box className={classes.quicklinks}>
-                                            <NavLink className={'link'} to={'/'}>Company Profile</NavLink>
-                                            <NavLink className={'link'} to={'/media'}>Media</NavLink>
-                                            <NavLink className={'link'} to={'/contact'}>Contact Us</NavLink>
+                                            <NavLink className={'link hover:text-white'} to={'/'}>About</NavLink>
+                        
+                                            <NavLink className={'link hover:text-white'} to={'/contact'}>Contact Us</NavLink>
                                         </Box>
                                     </Box>
                                 </Grid>
@@ -53,10 +55,10 @@ const Footer = () => {
                                     <Box>
                                         <TitleHead title="Our Product" />
                                         <Box className={classes.quicklinks}>
-                                            {ProductsLinks && ProductsLinks.map((db, index) => {
+                                            {slidesProducts && slidesProducts.map((db, index) => {
                                                 return (
                                                     db.link !== '/offer-of-month' &&
-                                                    <NavLink className={'link'} key={index} to={db.link}>{db.title}</NavLink>
+                                                    <NavLink className={'link hover:text-white'} key={index} to={db.link}>{db.title} Kota Stone</NavLink>
                                                 )
                                             }
                                             )}
@@ -84,6 +86,8 @@ const Footer = () => {
                         }
                     />
                 </Box>
+
+                <Whatsapp />
             </>
         )
     }
