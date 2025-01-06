@@ -41,7 +41,7 @@ const Footer = () => {
                                         <p>Shekhar stone company has been manufacturing and supplying top quality kota stone since 2000. One of the biggest polished kota stone supplier in Ramganjmandi Kota Dist. Rajasthan. In these 25 years, we have worked with an esteemed Customers that included India’s top Builders, industrialists, and real estate Contractors and directly to the customer. </p>
                                     </Box>
                                 </Grid>
-                                <Grid item lg={3} md={6} sm={6} xs={12}>
+                                <Grid item lg={2} md={6} sm={6} xs={12}>
                                     <Box>
                                         <TitleHead title="Quick Links" />
                                         <Box className={classes.quicklinks}>
@@ -51,14 +51,14 @@ const Footer = () => {
                                         </Box>
                                     </Box>
                                 </Grid>
-                                <Grid item lg={3} md={6}  sm={6} xs={12}>
+                                <Grid item lg={5} md={12}  sm={12} xs={12}>
                                     <Box>
                                         <TitleHead title="Our Product" />
-                                        <Box className={classes.quicklinks}>
+                                        <Box className={classes.quicklinks + ' grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2'}>
                                             {slidesProducts && slidesProducts.map((db, index) => {
                                                 return (
                                                     db.link !== '/offer-of-month' &&
-                                                    <NavLink className={'link hover:text-white'} key={index} to={db.link}>{db.title} Kota Stone</NavLink>
+                                                    <NavLink className={'link hover:text-white'} key={index} to={db.link}>{db.title}</NavLink>
                                                 )
                                             }
                                             )}
