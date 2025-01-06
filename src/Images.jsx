@@ -24,10 +24,6 @@ import FloorCleanerImg from './assets/img/products/CustomCleaningAgents/FloorCle
 // Home Page 
 // ------------------------------
 // ------------------------------
-// Main Slider 
-import slider1 from './assets/sliderMain/1.jpg'
-import slider2 from './assets/sliderMain/2.jpg'
-import slider3 from './assets/sliderMain/3.jpg'
 
 
 
@@ -51,6 +47,6 @@ import commanBanner from './assets/bg/commanBg.jpg';
 import mobileBanner from './assets/bg/mobileBanner.jpg';
 
 export {
-    solidFertilize, CapsuleFertilizer, liquidFertilizer, ConcreteBondingPowderImg, NanotechWaterProofImg, GlassAndSurfaceCleanerImg, DishwashGelImg, TextileWashMaticLiquidImg, RustCleanerImg, OxidationCleanerImg, FloorCleanerImg, OrganicFertilizersImg, OxidationCleaner_SmallImg, ConstructionChemicalsImg, CleaningAgentsImg, CarFoamWashCleanerImg, contactUsImg, nobanner, noImage, visionBg, servicebg, commanBg, commanBanner, mobileBanner, slider1, slider2, slider3
+    solidFertilize, CapsuleFertilizer, liquidFertilizer, ConcreteBondingPowderImg, NanotechWaterProofImg, GlassAndSurfaceCleanerImg, DishwashGelImg, TextileWashMaticLiquidImg, RustCleanerImg, OxidationCleanerImg, FloorCleanerImg, OrganicFertilizersImg, OxidationCleaner_SmallImg, ConstructionChemicalsImg, CleaningAgentsImg, CarFoamWashCleanerImg, contactUsImg, nobanner, noImage, visionBg, servicebg, commanBg, commanBanner, mobileBanner, 
 }
 

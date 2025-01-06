@@ -23,30 +23,40 @@ import p3 from '../../assets/products/22x16.jpeg';
 import p4 from '../../assets/products/2x2-uncut.jpeg';
 import p5 from '../../assets/products/23x23.jpeg';
 import p6 from '../../assets/products/3.jpeg';
+import p22x46 from '../../assets/products/22x46.jpeg';
+import red from '../../assets/products/red.jpeg';
+import green_kota_stone from '../../assets/products/green_kota_stone.jpg';
+import mirror_polish_kota_stone from '../../assets/products/mirror_polish_kota_stone.jpg';
+
+
+// Main Slider 
+import slider1 from '../../assets/sliderMain/1.jpg'
+import slider2 from '../../assets/sliderMain/2.jpg'
+import slider3 from '../../assets/sliderMain/3.jpg'
+import slider4 from '../../assets/sliderMain/4.jpg'
+import slider5 from '../../assets/sliderMain/5.jpeg'
+import slider6 from '../../assets/sliderMain/6.jpeg'
+import slider7 from '../../assets/sliderMain/7.jpeg'
+import slider8 from '../../assets/sliderMain/8.jpeg'
+
 
 
 
 // Service 
 
-import { nobanner, noImage, slider1, slider2, slider3, slider5, } from '../../Images';
 
 // Main Slider 
 export const slidesMain = [
   { image: slider1, content: 'This is the first slide' },
   { image: slider2, content: 'This is the second slide' },
   { image: slider3, content: 'This is the third slide' },
+  { image: slider4, content: 'This is the third slide' },
+  { image: slider5, content: 'This is the third slide' },
+  { image: slider6, content: 'This is the third slide' },
+  { image: slider7, content: 'This is the third slide' },
+  { image: slider8, content: 'This is the third slide' },
 ];
-// Main Slider Setting 
-// export const settingsMainSlider = {
-//   dots: false,
-//   infinite: true,
-//   speed: 500,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   autoplay: true,
-// };
-// Main Slider Setting 
+
 export const settingsMainSlider = {
   dots: true,
   infinite: true,
@@ -60,30 +70,6 @@ export const settingsMainSlider = {
   nextArrow: <ArrowForwardIosIcon />
 };
 
-
-
-// Our Services 
-// export const productData = [
-//   {
-//     image: noImage,
-//     title: 'Lorem ipsum',
-//     link: '/'
-//   },
-//   {
-//     image: noImage,
-//     title: 'Lorem ipsum',
-//     link: '/'
-//   },
-//   {
-//     image: noImage,
-//     title: 'Lorem ipsum',
-//     link: '/'
-//   },
-//   // {
-//   //   image: bioStimulants,
-//   //   title: 'Soil Application for Bio Fertilizers',
-//   // },
-// ];
 
 
 // Products 
@@ -135,7 +121,11 @@ export const slidesProducts = [
   { id: '103', image: p3, title: '22x11', link: '/', content: 'Kota Stone Size 22x11 Thickness available 18mm to 25mm and 25mm to 32mm' },
   { id: '104', image: p4, title: '2x2 uncut', link: '/', content: 'Kota Stone Size 2x2 uncut Thickness available 18mm to 25mm and 25mm to 32mm' },
   { id: '105', image: p5, title: '23x23', link: '/', content: 'Kota Stone Size 23x23 Thickness available 18mm to 25mm and 25mm to 32mm' },
-  { id: '106', image: p6, title: '22x11', link: '/', content: 'Kota Stone Size 22X11 Thickness available 18mm to 25mm and 25mm to 32mm' },
+  { id: '106', image: p6, title: '22x22', link: '/', content: 'Kota Stone Size 22X11 Thickness available 18mm to 25mm and 25mm to 32mm' },
+  { id: '107', image: p22x46, title: '22x46', link: '/', content: 'Kota Stone Size 22X46 Thickness available 30mm' },
+  { id: '108', image: red, title: 'Red Mandana all size', link: '/', content: 'Red mandana all sizes available thickness 18 to 25mm and 25to 30mm' },
+  { id: '109', image: green_kota_stone, title: 'Green Kota Stone', link: '/', content: 'Green Kota Stone Thickness available 18mm to 25mm and 25mm to 32mm' },
+  { id: '110', image: mirror_polish_kota_stone, title: 'Mirror Polish Kota Stone', link: '/', content: 'Mirror Polish Kota Stone Thickness available 18mm to 25mm and 25mm to 32mm' },
 ];
 
 
@@ -163,162 +153,7 @@ export const aboutUsData = [
   },
 ];
 
-// Testimonial Slider Setting 
-// export const settingsTestiSlider = {
-//   dots: true,
-//   infinite: true,
-//   speed: 500,
-//   slidesToShow: 3,
-//   slidesToScroll: 3,
-//   arrows: false,
-//   autoplay: true,
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         initialSlide: 1
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-//   ]
-// };
-// Testimonial Data
-// export const testimonialsData = [
-//   {
-//     image: team4,
-//     title: 'Madhulika Sharma',
-//     description: ["As someone who's always struggled with hair color, I was nervous about trying something new. But this salon's team of experts put me at ease. My hair has never looked so beautiful and vibrant!"]
-//   },
-//   {
-//     image: team3,
-//     title: "Anisha Sharma",
-//     description: ["I'm a total skeptic when it comes to haircuts, but this salon blew me away. I went in for a simple trim and left with a stylish, modern haircut that completely transformed my look."]
-//   },
-//   {
-//     image: team2,
-//     title: "Ankur Aggarwal",
-//     description: ["I've been getting my haircuts at this salon for years, and I can't imagine going anywhere else. The stylists here always give me the perfect cut that suits my face shape and style."]
-//   },
-//   {
-//     title: "Jessica Arora",
-//     description: ["The haircuts here are consistently top-notch, and their attention to detail is unmatched. Plus, the face care treatments are a fantastic way to relax and rejuvenate. I feel like a new person every time I leave."]
-//   },
-//   {
-//     image: team1,
-//     title: "Gourav Arora",
-//     description: ["I can't express how grateful I am to have found this salon. The hairstylists here are not only incredibly talented but also friendly and welcoming."]
-//   },
 
-// ];
-
-// Partner Brands Slider Setting 
-// export const settingsPartnerBrandsSlider = {
-//   dots: false,
-//   infinite: true,
-//   speed: 500,
-//   slidesToShow: 5,
-//   slidesToScroll: 5,
-//   arrows: true,
-//   autoplay: true,
-//   prevArrow: <ArrowBackIosNewIcon />,
-//   nextArrow: <ArrowForwardIosIcon />,
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         initialSlide: 3
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 2
-//       }
-//     }
-//   ]
-// };
-{/* Partner Brands */ }
-// export const partnerBrandsData = [
-//   { image: alga },
-//   { image: allmaleinc },
-//   { image: dyson },
-//   { image: footlogix },
-//   { image: innoluxe },
-//   { image: kanpeki },
-//   { image: kerastase },
-//   { image: loreal },
-//   { image: thalgo },
-// ];
-
-// Our Blog 
-// export const blogData = [
-//   {
-//     image: blog1,
-//     title: 'Beauty Bee Salon: Where Expertise Meets Exceptional Haircuts',
-//     description: ["Beauty Bee Salon stands as a beacon of excellence in the world of hair care."]
-//   },
-//   {
-//     image: blog2,
-//     title: "Beauty Bee Salon: Elevate Your Look with Stunning Hair Color",
-//     description: ["Renowned for its expertise in hair care and styling, is the perfect destination to elevate your look with stunning hair color."]
-//   },
-//   {
-//     image: blog3,
-//     title: "Beauty Bee Salon: Crafting Timeless Bridal Elegance",
-//     description: ["Renowned for its expertise in hair care and styling, is the perfect destination to elevate your look with stunning hair color."]
-//   },
-// ];
-
-
-
-
-// export const counterData = [
-//   {
-//     icon: <CalendarMonthIcon className="h-6 w-7" />,
-//     count: 2017,
-//     title: 'Lorem ipsum',
-//   },
-//   {
-//     icon: <GroupsIcon className="h-6 w-7" />,
-//     count: 15,
-//     title: "Lorem ipsum",
-//   },
-//   {
-//     icon: <HomeWorkIcon className="h-6 w-7" />,
-//     count: 2,
-//     title: "Lorem ipsum",
-//   },
-
-// ];
 
 
 // Vision Mission Tab 

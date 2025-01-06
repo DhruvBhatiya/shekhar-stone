@@ -38,7 +38,7 @@ const Footer = () => {
                                 <Grid item lg={5} md={6} sm={6} xs={12}>
                                     <Box className={'footer-form'}>
                                         <TitleHead title="About Shekhar Stone Company" />
-                                        <p>Shekhar stone company has been manufacturing and supplying top quality kota stone since 2000. One of the biggest polished kota stone supplier in Ramganjmandi Kota Dist. Rajasthan. In these 25 years, we have worked with an esteemed Customers that included India’s top Builders, industrialists, and real estate constrictors and directly to the customer. </p>
+                                        <p>Shekhar stone company has been manufacturing and supplying top quality kota stone since 2000. One of the biggest polished kota stone supplier in Ramganjmandi Kota Dist. Rajasthan. In these 25 years, we have worked with an esteemed Customers that included India’s top Builders, industrialists, and real estate Contractors and directly to the customer. </p>
                                     </Box>
                                 </Grid>
                                 <Grid item lg={3} md={6} sm={6} xs={12}>
