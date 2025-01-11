@@ -12,7 +12,9 @@ export const useStyles = makeStyles(() => ({
         "& .subTitle": {
             //  "fontFamily": "\"Montserrat\", Sans-serif", "fontSize": "27px", "fontWeight": "400",
 
-            "fontFamily":"'Oswald', sans-serif !important","fontSize":"40px","fontWeight":"600","color": `${Colors.blue}`,"textTransform":"uppercase","textAlign":"center",
+            "fontFamily":"'Oswald', sans-serif !important",
+            // "fontSize":"40px",
+            "fontWeight":"600","color": `${Colors.blue}`,"textTransform":"uppercase","textAlign":"center",
             marginBottom: '10px'
         },
 

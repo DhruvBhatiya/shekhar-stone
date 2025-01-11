@@ -6,7 +6,7 @@ const TitleSection = ({title,subTitle, className, lineColor}) => {
     const classes = useStyles()
 
   return (
-    <Box className={classes.tileSec + '  ' + className}>
+    <Box className={classes.tileSec + '  !text-3xl lg:!text-4xl ' + className}>
       {/* <h5 className='title'>{subTitle}</h5> */}
       <h2 className='subTitle'>{title}</h2>
       <div class="servece-0111" style={{lineColor}}></div>

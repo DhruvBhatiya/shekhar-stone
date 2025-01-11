@@ -70,9 +70,9 @@ const Footer = () => {
 
 
                         {/* 2 */}
-                        <Box className={classes.rowBottom}>
+                        <Box className={classes.rowBottom + ' ' + ' text-center'}>
                             <Box className={''}>
-                                <p>Design By <span><b>Webbleu Technologies Pvt Ltd</b></span> - 2024</p>
+                                <p className='mb-0'>Design By <span><b>Webbleu Technologies Pvt Ltd</b></span> - 2025</p>
                             </Box>
                         </Box>
                     </Container1200>

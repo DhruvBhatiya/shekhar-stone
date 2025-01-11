@@ -124,7 +124,7 @@ export const slidesProducts = [
   { id: '106', image: p6, title: '22x22 Kota Stone', link: '/', content: 'Kota Stone Size 22X11 Thickness available 18mm to 25mm and 25mm to 32mm' },
   { id: '107', image: p22x46, title: '22x46 Kota Stone', link: '/', content: 'Kota Stone Size 22X46 Thickness available 30mm' },
   { id: '108', image: red, title: 'Red Mandana all size', link: '/', content: 'Red mandana all sizes available thickness 18 to 25mm and 25to 30mm' },
-  { id: '109', image: green_kota_stone, title: 'Green Kota Stone', link: '/', content: 'Green Kota Stone Thickness available 18mm to 25mm and 25mm to 32mm' },
+  // { id: '109', image: green_kota_stone, title: 'Green Kota Stone', link: '/', content: 'Green Kota Stone Thickness available 18mm to 25mm and 25mm to 32mm' },
   { id: '110', image: mirror_polish_kota_stone, title: 'Mirror Polish Kota Stone', link: '/', content: 'Mirror Polish Kota Stone Thickness available 18mm to 25mm and 25mm to 32mm' },
 ];
 
