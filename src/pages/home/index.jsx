@@ -34,7 +34,7 @@ const Home = () => {
 
   const [imgError, setError] = useState(false);
     const [openModal, setOpenModal] = useState(false);
-  
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
   // Main Slider 
   const MainSlider = useSelector((state) => state.allSlider);
@@ -67,6 +67,11 @@ const Home = () => {
   // const no =[1, 2, 3, 4];
   // const no1 = no.reverse();
   // console.log("no.reverse()__",no1)
+
+  const handleOrderNowClick = (product) => {
+    setSelectedProduct(product);
+    setOpenModal(true);
+  };
 
 
   return (
@@ -136,7 +141,7 @@ const Home = () => {
               {slidesProducts.map((slide, index) => (
                 <>
                   {/* <CarouselCard slide={slide} /> */}
-                  <CardMui db={slide} index={index} onClick={() => setOpenModal(true)}  />
+                  <CardMui db={slide} index={index} onClick={() => handleOrderNowClick(slide)}  />
                 </>
               ))}
             </CarouselComponent>
@@ -221,7 +226,15 @@ const Home = () => {
       </Container1320> */}
 
       {/* Inquiry Modal */}
-      <InquiryModal open={openModal} onClose={() => setOpenModal(false)} />
+
+      {selectedProduct && (
+        <InquiryModal
+          open={openModal}
+          onClose={() => setOpenModal(false)}
+          product={selectedProduct} // Pass the selected product data to the modal
+        />
+      )}
+
     </>
   );
 };

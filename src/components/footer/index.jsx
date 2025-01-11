@@ -3,12 +3,10 @@ import { Box, Grid } from '@mui/material';
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import ScrollToTop from "react-scroll-to-top";
-import { menuListMobile } from '../header/headerData';
-import { Container10, Container100, Container1140, Container1200, Container1320, Container1400, Container1440 } from '../shared/CustomContainer';
-import { useStyles } from './footer.style';
-import { ProductsLinks } from './footerData';
 import { slidesProducts } from '../../pages/home/homeData';
+import { Container1200 } from '../shared/CustomContainer';
 import Whatsapp from '../shared/WhatsApp';
+import { useStyles } from './footer.style';
 
 
 const Footer = () => {

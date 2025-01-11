@@ -281,7 +281,7 @@ export const useStyles = makeStyles(() => ({
     zIndex: 1100,
     width: "100%",
     position: 'sticky',
-    top: '-139px'
+    top: '-140px'
   },
   upperHeader: {
     backgroundColor: "#f5f5f5",
