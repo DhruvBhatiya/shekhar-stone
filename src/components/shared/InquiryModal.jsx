@@ -51,7 +51,7 @@ const InquiryModal = ({ open, onClose, product }) => {
           {/* Right Side: Inquiry Form */}
           <Box >
             <h3 className="text-lg font-semibold mb-4">Please Fill the Inquiry Form</h3>
-            <ContactForm />
+            <ContactForm product={product ? product.title : ''} />
           </Box>
         </Box>
       </DialogContent>

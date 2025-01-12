@@ -17,6 +17,7 @@ import * as Yup from 'yup';
 import { ButtonBorder } from '../../components/shared/ButtonCustom';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
+import MailIcon from '@mui/icons-material/Mail';
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -28,7 +29,7 @@ const validationSchema = Yup.object({
   mobile: Yup.string()
     .required('Mobile number is required')
     .matches(/^[0-9]{10}$/, 'Mobile number must be 10 digits'),
-  subject: Yup.string().required('Subject is required'),
+  // subject: Yup.string().required('Subject is required'),
   message: Yup.string()
     .required('Message is required')
     .min(10, 'Message must be at least 10 characters'),
@@ -39,7 +40,7 @@ const validationSchema = Yup.object({
     .notRequired(),
 });
 
-const ContactForm = ({product}) => {
+const ContactForm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(true); // Tracks success or error
@@ -49,15 +50,15 @@ const ContactForm = ({product}) => {
   };
 
   const sendEmail = (values, { setSubmitting, resetForm }) => {
-    const serviceID = 'service_90admvf';
-    const templateID = 'template_yruande';
-    const userID = 'qrNUj73nGfoqiElqV'; // Public Key
+    const serviceID = '';
+    const templateID = '';
+    const userID = ''; // Public Key
 
     const emailData = {
       name: values.name,
       email: values.email,
       mobile: values.mobile,
-      subject: values.subject,
+      // subject: values.subject,
       message: values.message,
     };
 
@@ -91,7 +92,7 @@ const ContactForm = ({product}) => {
           name: '',
           email: '',
           mobile: '',
-          subject: product ? product : 'Contact Us',
+          // subject: '',
           message: '',
           attachment: null,
         }}
@@ -101,20 +102,7 @@ const ContactForm = ({product}) => {
         {({ errors, touched, setFieldValue, values, isSubmitting }) => (
           <Form>
             <Grid container spacing={2}>
-              
-              
-              <Grid item xs={12} className=''  style={{ visibility: 'hidden', height: 0, padding: 0 }}>
-                <Field
-                
-                  as={TextField}
-                  fullWidth
-                  name="subject"
-                  label="Product"
-                  variant="outlined"
-                  // error={touched.subject && Boolean(errors.subject)}
-                  // helperText={touched.subject && errors.subject}
-                /> 
-              </Grid>
+
               <Grid item xs={12}>
                 <Field
                   as={TextField}
@@ -161,9 +149,22 @@ const ContactForm = ({product}) => {
                   helperText={touched.message && errors.message}
                 />
               </Grid>
-             
+              {/* {values.subject === 'Upload your documents' && (
+                <Grid item xs={12}>
+                  <input
+                    type="file"
+                    accept="application/pdf,image/*"
+                    onChange={(event) =>
+                      setFieldValue('attachment', event.currentTarget.files[0])
+                    }
+                  />
+                  {errors.attachment && touched.attachment && (
+                    <p className="text-red-600 text-sm">{errors.attachment}</p>
+                  )}
+                </Grid>
+              )} */}
               <Grid item xs={12}>
-                <ButtonBorder
+                {/* <ButtonBorder
                   type="submit"
                   fullWidth
                   variant="contained"
@@ -171,7 +172,11 @@ const ContactForm = ({product}) => {
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
-                </ButtonBorder>
+                </ButtonBorder> */}
+
+                <Button  type="submit" variant="outlined" endIcon={<MailIcon />}  disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </Button>
               </Grid>
             </Grid>
           </Form>
